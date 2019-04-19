@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daily Journal</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/journal.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+ <div class="journalpage">
+<h1>Joab Sigrah (Jr.)</h1>
+
+<div class="blocks">
+    <div class="block1" >   
+    <form id="borderimg">
+        <fieldset>
+            <legend align="center">Daily Journal</legend>
+            <label for="journalDate"> Date of Entry</label>
+            <input type="date" name="journalDate" id="journalDate">
+        </fieldset>
+    </form>
+    </div>
+
+    <div class="block2">
+    <form>
+        <fieldset>
+            <label for="journalSubject"> Concepts Covered</label>
+            <input type="text" name="journalSubject" id="concepts">
+        </fieldset>
+    </form>
+    </div>
+
+    <div class="block3">
+    <form>
+        <fieldset>
+            <label for="journalDetails">Journal Entry</label>
+            <textarea class="log" rows="10" cols="60">
+                    </textarea>
+        </fieldset>
+    </form>
+    </div>
+
+    <div class="block4">
+    <form>
+    <fieldset>
+        <label for="dailyMood"> Mood For The Day </label>
+        <select name="mood" class="mood">
+            <option value="happy">😃 Happy 😃</option>
+            <option value="sad">😔 Sad 😔</option>
+            <option Value="tired">😩 Tired 😩</option>
+            <option value="sleepy">😴 Sleepy 😴</option>
+            <option value="exited">🤩 Excited 🤩</option>
+        </select>
+    </fieldset>
+    </form>
+   </div>
+
+</div>
+
+<div >
+        <form action="">
+            <input class="stored" type="submit" value="Record Journal Entry">
+        </form>
+    </div>
+</div>
+
+
+<article class="entryLog"></article>
+
+        
+    <script src="/scripts/journal.js"></script>
+</body>
+</html>
