@@ -10,11 +10,11 @@
 
 // let InputData = []
 
-// const objectsJournalEntry = {
-//     DateOfEntry: "",
-//     ConceptsCovered:"",
-//     JournalEntry:"",
-//     MoodForTheDay:"",
+//  const objectsJournalEntry = {
+//      DateOfEntry: "",
+//      ConceptsCovered:"",
+//      JournalEntry:"",
+//       MoodForTheDay:"",
 
 
 // };
@@ -53,11 +53,44 @@
 
 //Journal Exercise 3//
 
+// const eLog = document.querySelector(".entryLog");
+// const submit = document.querySelector('.stored');
+// submit.addEventListener("click", function(){
+
+    //     event.preventDefault();
+
+        
+//             const date = document.querySelector("#journalDate").value
+//             const concepts = document.querySelector("#concepts").value
+//             const entries = document.querySelector(".log").value
+//             const mood = document.querySelector(".mood").value
+            
+//             eLog.innerHTML = `
+//             <div class= "daily">
+//             <h1>${date} </h1>
+//             <p>${concepts}</p>
+//             <p>${entries}</p>
+//             <p>${mood}</p>
+            
+//             </div>
+//             `
+//     });
+
+    
+
+
+   
+
+
+//Journal Exercise 4//
+
 const eLog = document.querySelector(".entryLog");
 const submit = document.querySelector('.stored');
 submit.addEventListener("click", function(){
-
-
+    
+    // event.preventDefault()
+    
+    
     const date = document.querySelector("#journalDate").value
     const concepts = document.querySelector("#concepts").value
     const entries = document.querySelector(".log").value
@@ -66,17 +99,12 @@ submit.addEventListener("click", function(){
     eLog.innerHTML = `
     <div class= "daily">
     <h1>${date} </h1>
-    <p>${concepts}</p>
-    <p>${entries}</p>
-    <p>${mood}</p>
+            <p>${concepts}</p>
+            <p>${entries}</p>
+            <p>${mood}</p>
+            
+            </div>
+            `
+    });
+
     
-    </div>
-    `
-    event.preventDefault();
-
-
-})
-   
-
-
-//Journal Exercise 3//
